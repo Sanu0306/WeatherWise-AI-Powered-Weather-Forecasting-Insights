@@ -1,16 +1,133 @@
-# React + Vite
+# 🌦️ WeatherWise – AI-Powered Weather Forecasting & Insights
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+WeatherWise is a full-stack weather forecasting application that provides real-time weather updates, hourly forecasts, and 3-day weather predictions. It also integrates a Gemini-powered AI Weather Assistant to provide contextual weather insights.
 
-Currently, two official plugins are available:
+**🌐 Live Demo:** [WeatherWise](https://weather-forecast-pi-two.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- **Real-Time Weather:** Get current weather conditions for searched cities.
+- **Hourly Forecast:** View upcoming hourly weather updates.
+- **3-Day Forecast:** Explore weather predictions for the next five days.
+- **AI Weather Assistant:** Ask weather-related questions using Gemini API.
+- **User Authentication:** Secure signup and login using JWT and password hashing.
+- **Favourite Cities:** Save and manage your favourite cities.
+- **Responsive Design:** Accessible across desktop and mobile devices.
+- **Temperature Conversion:** Switch between Celsius and Fahrenheit.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+**Frontend**
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+- React Context API
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Backend**
+- Node.js
+- Express.js
+- REST APIs
+
+**Database**
+- MongoDB
+
+**APIs & Integration**
+- WeatherAPI
+- Google Gemini API
+
+**Deployment**
+- Vercel (Frontend)
+- Render (Backend)
+
+## 📁 Project Structure
+
+```text
+WeatherWise/
+│
+├── public/
+├── src/
+│   ├── Component/
+│   ├── Context/
+│   ├── pages/
+│   ├── api/
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── server/
+│   ├── middleware/
+│   ├── model/
+│   ├── index.js
+│   └── package.json
+│
+├── .gitignore
+├── package.json
+└── README.md
+```
+
+## ⚙️ Installation and Setup
+
+**1. Clone the repository**
+
+```bash
+git clone https://github.com/Sanu0306/Weather-Forecast.git
+```
+
+**2. Install frontend dependencies**
+
+bash
+cd Weather-Forecast
+npm install
+
+
+**3. Configure frontend environment variables**
+
+Create a `.env` file in the project root:
+VITE_API_URL=https://weather-forecast-0at9.onrender.com
+VITE_WEATHER_API_KEY=your_weatherapi_key
+
+**4. Start the frontend**
+
+```bash
+npm run dev
+```
+
+**5. Configure the backend**
+
+Open a new terminal:
+
+```bash
+cd server
+npm install
+```
+
+Create a `.env` file inside the `server` folder:
+
+```env
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+GEMINI_API_KEY=your_gemini_api_key
+```
+
+**6. Start the backend**
+
+```bash
+npm start
+```
+
+## 🚀 Deployment
+
+- Frontend deployed on Vercel.
+- Backend deployed on Render.
+- Database hosted on MongoDB Atlas.
+
+## 👩‍💻 Developer
+
+**Sangeeta Lowanshi**
+
+- GitHub: [Sanu0306](https://github.com/Sanu0306)
+- LinkedIn: [Sangeeta Lowanshi](https://www.linkedin.com/in/sangeeta-lowanshi-78a61a2b8)
+
+---
+
+⭐ If you find this project useful, consider giving it a star!
